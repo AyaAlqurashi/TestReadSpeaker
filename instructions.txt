@@ -1,0 +1,25 @@
+cd C:\Users\ayah.q\Documents\FlaskTTSModee
+conda activate flask_env
+app2.py
+
+
+http://127.0.0.1:5001
+
+-----------------------------------------
+pip install flask google-cloud-texttospeech
+conda install -c conda-forge ffmpeg
+
+mkdir C:\Users\YourName\Documents\FlaskTTS
+mkdir %USERPROFILE%\Documents\FlaskTTS
+cd %USERPROFILE%\Documents\FlaskTTS
+
+set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\YourName\Documents\FlaskTTS\gentle-shell-444310-d7-e53cbfe6fe57.json
+python app.py
+
+
+echo %GOOGLE_APPLICATION_CREDENTIALS%
+C:\Users\YourName\Documents\FlaskTTS\gentle-shell-444310-d7-e53cbfe6fe57.json
+set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\ayah.q\Documents\FlaskTTS\gentle-shell-444310-d7-e53cbfe6fe57.json
+echo %GOOGLE_APPLICATION_CREDENTIALS%
+C:\Users\ayah.q\Documents\FlaskTTS\gentle-shell-444310-d7-e53cbfe6fe57.json
+type C:\Users\ayah.q\Documents\FlaskTTS\gentle-shell-444310-d7-e53cbfe6fe57.json

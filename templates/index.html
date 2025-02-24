@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadSpeaker Integration</title>
+    
+    <!-- ReadSpeaker Script -->
+    <script src="//cdn-me.readspeaker.com/script/9023/webReader/webReader.js?pids=wr&notools=1" type="text/javascript" id="rs_req_Init"></script>
+    <!-- Custom Styles for ReadSpeaker Player -->
+	 <style>
+	.rs_splitbutton .rsbtn_exp .rsbtn_exp_inner button.rsbtn_pause.rsbtn_player_item { padding-left: 11px!important; }
+	.rs_splitbutton .rsbtn_exp .rsbtn_exp_inner .rsbtn_volume,
+	.rs_splitbutton .rsbtn_exp .rsbtn_exp_inner .rsbtn_speed { display:none!important; }
+	</style>
+
+</head>
+<body>
+    <h1>Welcome to the ReadSpeaker Enabled Page</h1>
+    
+    <!-- Player Container -->
+	
+    <div id="xp1" class="rs_preserve rs_skip rs_addtools rs_splitbutton rs_exp"></div>
+
+    
+    <!-- Example Content -->
+    
+    <!-- Activation Link -->
+<a href="https://app-me.readspeaker.com/cgi-bin/rsent?customerid=9023&lang=ar_ar&voice=Yasmin&readid=read_content&url=" 
+   onclick="return readpage(this.href, 'xp1');" 
+   data-target="xp1">
+   Listen text or icon
+</a>
+    <p id="read_content">This is a sample paragraph that will be read aloud when the ReadSpeaker is activated.</p>
+
+
+</body>
+</html>

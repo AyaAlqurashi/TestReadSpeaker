@@ -1,0 +1,5 @@
+.form-group.required-field .control-label:after {
+    content: "*";
+    color: red;
+    margin: 5px;
+}
